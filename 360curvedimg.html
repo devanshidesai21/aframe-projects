@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+		    <script src="https://aframe.io/releases/0.8.2/aframe.min.js">
+		    </script>
+	</head>
+	<body>
+		<a-scene>
+			<a-assets>
+				<img id="my-image" src="index.jpeg"/>
+				<img id="sky" src="3600.jpg"/>
+			</a-assets>
+			<a-sky src="#sky"></a-sky>
+
+			<a-curvedimage src="#my-image" height="3" radius="3" theta-length="100" rotation="0 100 0" position="0 2 -5"></a-curvedimage>
+		</a-scene>	
+	</body>
+</html>
